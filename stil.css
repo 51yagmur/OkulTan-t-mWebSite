@@ -1,0 +1,125 @@
+body {
+    margin-right: 10%;
+    margin-left: 10%;
+    margin-top: 0px;
+}
+
+.u1 {
+    float: left;
+    width: 20%;
+}
+
+.u2 {
+    float: right;
+    width: 75%;
+}
+
+h1,h2 {
+    color: #09c860;
+    text-align: center;
+    font-family: "Trebuchet MS";
+}
+
+.cerceve {
+    border: 1px solid #039;
+    border-radius: 10px;
+}
+
+#menu {
+    background-color: #039;
+    padding: 20px;
+    text-align: center;
+    position: -webkit-sticky;
+    position: fixed;
+    top: 0px;
+    width: 77%;
+}
+
+#menu a {
+    color: #fff;
+    font-family: "Trebuchet MS";
+    font-size: 16px;
+    text-decoration: none;
+    margin-left: 20px;
+    margin-right: 20px;
+    border: 1px solid #66f;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#menu a:hover {
+    background-color: #ccc;
+}
+
+.resetle {
+    clear: both;
+}
+
+.b1 {
+    float: left;
+    width: 47%;
+}
+
+.b2 {
+    float: right;
+    width: 47%;
+}
+
+.ayrac {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    line-height: 1px;
+    background-color: #00aa00;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+.icerik-metin {
+    text-align: justify;
+    color: #999;
+    font-family: Tahoma;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.a1,.a2,.a3 {
+    border: 1px solid #ccc;
+    width: 30%;
+    padding: 5px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.a1,.a2 {
+    float: left;
+    margin-right: 3%;
+}
+
+.personel-isim {
+    color: #00a;
+    font-size: 16px;
+    font-family: Tahoma;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.a3 {
+    float: right;
+}
+
+.i1 {
+    float: left;
+    width: 40%;
+}
+
+.i2 {
+    float: right;
+    width: 60%;
+}
+
+.iletisim-baslik {
+    text-decoration: underline;
+    font-weight: bolder;
+    color: #333;
+    margin-top: 10px;
+}

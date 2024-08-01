@@ -1,0 +1,78 @@
+body {
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+#menu {
+    background-color: #4e555b;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/* a nın link özelliği (varsayılandır) */
+#menu a {
+    font-size: 16px;
+    font-family: Tahoma;
+    color: #fff;
+    margin-left: 20px;
+    margin-right: 20px;
+    border: 1px solid #eee;
+    padding: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+/* hover özelliği */
+#menu a:hover {
+    background-color: #8fd19e;
+}
+
+img {
+    margin-top: 30px;
+}
+
+h1,h3 {
+    color: #e33;
+}
+
+/* class stil tanımlayıcı */
+.cerceve {
+    border: 1px solid #1b1e21;
+    border-radius: 10px;
+}
+
+p,.ders-listesi {
+    font-family: Tahoma;
+    font-size: 16px;
+    text-align: justify;
+    color: #666;
+    line-height: 24px;
+}
+
+.ayrac {
+    letter-spacing: 5px;
+    font-family: Tahoma;
+    font-weight: bolder;
+    color: #aaa;
+    font-size: 30px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+.personel p {
+    text-align: center;
+}
+
+.personel-ad {
+    font-size: 20px;
+    margin-bottom: 0px;
+}
+
+.personel-aciklama {
+    margin-top: 0px;
+}
+
+.iletisim-resmi {
+    text-align: left;
+}

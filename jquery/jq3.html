@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../assets/jquery-3.6.1.min.js"></script>
+    <style>
+        div {
+            padding: 5px;
+            border: 1px solid #005cbf;
+            width: 20%;
+            margin-bottom: 10px;
+        }
+
+        body {
+            font-family: Tahoma;
+            font-size: 14px;
+        }
+
+        ul {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h4 id="y1">1. Yarıyıl</h4>
+        <ul class="a">
+            <li>Web Tasarım Temelleri</li>
+            <li>Grafik Tasarım</li>
+            <li>Algoritma</li>
+            <li>Bilgisayar Donanımı</li>
+        </ul>
+    </div>
+
+    <div>
+        <h4 id="y2">2. Yarıyıl</h4>
+        <ul class="b">
+            <li>Bilgisayar Ağları</li>
+            <li>Veritabanı</li>
+            <li>İnternet Programcılığı I</li>
+        </ul>
+    </div>
+
+    <div>
+        <h4 id="y3">3. Yarıyıl</h4>
+        <ul class="c">
+            <li>İnternet Programcılığı II</li>
+            <li>Görsel Programlama II</li>
+            <li>Ağ ve Bilgi Güvenliği</li>
+        </ul>
+    </div>
+</body>
+</html>
+
+<script>
+    $(function () {
+        $("#y1").click(function () {
+            $(".a").slideToggle(500);
+        });
+
+        $("#y2").click(function () {
+            $(".b").slideToggle(500);
+        });
+
+        $("#y3").click(function () {
+            $(".c").slideDown(500);
+        });
+    });
+</script>

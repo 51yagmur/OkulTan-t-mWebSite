@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        #secim {
+            color: #a00;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+  <h3>Ders Seçim Tablosu</h3>
+
+  <div>Ders Listesi</div>
+
+  <div>
+    <ol>
+        <li>Web Tasarım Temelleri</li>
+        <li>Bilgisayar Donanımı</li>
+        <li>Görsel Programlama-1</li>
+        <li>Bilgisayar Ağları</li>
+    </ol>
+  </div>
+
+  <div>
+      Seçiminiz:
+      <input type="number" id="sec" name="sec">
+      <button onclick="dersSecimIslemi()">Seç</button>
+  </div>
+
+  <div id="secim">.</div>
+
+</body>
+</html>
+
+<script>
+    function dersSecimIslemi() {
+        var s = document.getElementById("sec").value;
+        var liste = document.getElementsByTagName("li");
+        document.getElementById("secim").innerText = liste[s].innerHTML;
+    }
+</script>

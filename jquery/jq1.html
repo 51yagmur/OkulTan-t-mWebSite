@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../assets/jquery-3.6.1.min.js"></script>
+    <style>
+        div {
+            padding: 5px;
+            border: 1px solid #005cbf;
+            width: 20%;
+            margin-bottom: 10px;
+        }
+
+        body {
+            font-family: Tahoma;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div id="a">
+        <h4>1. Yarıyıl</h4>
+        <ul>
+            <li>Web Tasarım Temelleri</li>
+            <li>Grafik Tasarım</li>
+            <li>Algoritma</li>
+            <li>Bilgisayar Donanımı</li>
+        </ul>
+    </div>
+
+    <div class="a">
+        <h4>2. Yarıyıl</h4>
+        <ul>
+            <li>Bilgisayar Ağları</li>
+            <li>Veritabanı</li>
+            <li>İnternet Programcılığı I</li>
+        </ul>
+    </div>
+
+    <div class="a">
+        <h4>3. Yarıyıl</h4>
+        <ul>
+            <li>İnternet Programcılığı II</li>
+            <li>Görsel Programlama II</li>
+            <li>Ağ ve Bilgi Güvenliği</li>
+        </ul>
+    </div>
+
+    <button id="tum">Tüm DIV'ler</button>
+    <button id="tek">ID DIV'i seç</button>
+    <button id="sinif">CLASS DIV seç</button>
+</body>
+</html>
+
+<script>
+    $(function () {
+        $("#tum").click(function () {
+            $("div").hide(100);
+        });
+
+        $("#tek").click(function () {
+            $("#a").hide(500);
+        });
+
+        $("#sinif").click(function () {
+            $(".a").hide(500);
+        });
+    });
+</script>

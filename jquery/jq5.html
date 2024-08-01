@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Uygulaması</title>
+    <style>
+        .form-bilgisi {
+            font-family: Tahoma;
+            font-size: 14px;
+        }
+
+        input {
+            margin-bottom: 10px;
+        }
+
+        .uyari {
+            color: #c00;
+        }
+    </style>
+    <script src="../assets/jquery-3.6.1.min.js"></script>
+</head>
+<body>
+    <div>
+        <h4>Üye Kayıt Ekranı</h4>
+        <form id="uye-formu" action="http://www.subu.edu.tr/kayit" method="post" onsubmit="return false;">
+            <div class="form-bilgisi">
+                Kullanıcı Adı:<br>
+                <input type="text" name="kadi" id="kadi">
+            </div>
+            <div class="form-bilgisi">
+                Şifre:<br>
+                <input type="password" name="sifre" id="sifre">
+            </div>
+            <div class="form-bilgisi">
+                Şifre (Tekrar):<br>
+                <input type="password" name="sifre2" id="sifre2">
+            </div>
+            <div class="form-bilgisi">
+                Mail Adresi:<br>
+                <input type="email" name="email" id="email">
+            </div>
+            <div class="form-bilgisi">
+                <input type="submit" value="Kaydet" id="btn">
+            </div>
+        </form>
+        <div class="uyari"></div>
+    </div>
+</body>
+</html>
+
+<script>
+    //jquery kullanıcıya özgü fonksiyon
+    var form_kontrolu = function () {
+        var kadi = $("#kadi").val();
+        var sifre = $("#sifre").val();
+        var sifre2 = $("#sifre2").val();
+
+        if (kadi=="") {
+            $(".uyari").html("Kullanıcı adı boş olamaz.");
+        }
+        else if (sifre=="" || sifre.length<4) {
+            $(".uyari").text("Şifre boş olamaz veya şifre 4 karakterden az olamaz");
+        }
+        else if(sifre!=sifre2) {
+            $(".uyari").text("Şifreler uyuşmuyor.");
+        }
+        else {
+            $("#uye-formu").removeAttr("onsubmit");
+        }
+    }
+
+    $("#btn").click(function () {
+        form_kontrolu();
+    });
+</script>

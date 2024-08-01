@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h3>Ürün Fiyat Hesaplama</h3>
+
+    <div>
+        Ürün Fiyatı (Kdv hariç):
+        <input type="number" id="fiyat" name="fiyat" onblur="hesapla()">
+    </div>
+
+    <div id="tutar">
+        KDV dahil fiyatı: 0 TL
+    </div>
+</body>
+</html>
+
+<script>
+    function hesapla() {
+        var kdv = 1.18;
+        var f = document.getElementById("fiyat").value;
+        var tut = f * kdv;
+        document.getElementById("tutar").innerHTML = "KDV dahil fiyatı: <b>" + tut + "</b> TL";
+    }
+</script>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sakarya Myo Bilgisayar Programcılığı</title>
+    <link rel="stylesheet" href="assets/bootstrap.min.css">
+
+    <style>
+        .bosluk {
+            padding-bottom: 15px;
+            padding-top: 15px;
+        }
+
+        #menu,#baslik,#ic,#ders,#alt {
+            display:none;
+        }
+    </style>
+    <script src="assets/jquery-3.6.1.min.js"></script>
+</head>
+<body>
+    <div id="menu" class="container-fluid">
+        <div class="row">
+            <div class="col-md-12 bg-info text-center bosluk">
+                <a class="btn btn-link text-light" href="#">Ana Sayfa</a>
+                <a class="btn btn-link text-light" href="#">Bölüm Hakkında</a>
+                <a class="btn btn-link text-light" href="#">Akademisyenler</a>
+                <a class="btn btn-link text-light" href="#">Dersler</a>
+                <a class="btn btn-link text-light" href="#">İletişim</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="baslik" class="jumbotron text-center">
+        <img src="resimler/subu2a.png">
+        <h1>Sakarya Meslek Yüksekokulu</h1>
+        <h3 class="text-danger">Bilgisayar Programcılığı</h3>
+    </div>
+
+    <div id="ic" class="container">
+        <div class="row bosluk">
+            <div class="col-md-4">
+                <h4 class="text-success">Bölüm Hakkında</h4>
+            </div>
+            <div class="col-md-4">
+                <h4 class="text-primary">Akademisyenler</h4>
+            </div>
+            <div class="col-md-4">
+                <h4 class="text-danger">İletişim</h4>
+            </div>
+        </div>
+        <div class="row bosluk">
+            <div class="col-md-4 text-justify">
+                1970 li yıllarda İstanbul Teknik Üniversitesi tarafından kullanılan
+                binada hala eğitim öğretime devam etmekteyiz. O yıllarda mühendislik
+                fakültesi olarak kullanılan binamızda verilen eğitimler hem bölgede
+                hem de ülkede ses getiren çalışmaların alt yapısını oluşturmaktadır.
+                <br><br>
+                <img src="resim_diger/yukardan.jpg" class="img-fluid rounded">
+            </div>
+            <div class="col-md-4">
+                Bölümde en önemli yapı taşlarından olan eğitmenler bakımından hem
+                deneyim hemde bilgi birikimi açısından son derece şanslı olan bir
+                bölüm olarak kendimizi görebiliriz. Çünkü dört akademisyen okulumuzdaki
+                pek az bölümde olmakla birlikte akademisyenlerimizin özellikle özel
+                sektör ve ders verme tecrübelerinin olması ayrı bir kazanımdır.
+                <ul>
+                    <li>Öğr.Gör.İsmail Öylek</li>
+                    <li>Dr.Öğr.Üyesi Serkan Dereli</li>
+                    <li>Dr.Öğr.Üyesi Ferda Bozkurt</li>
+                    <li>Öğr.Gör.Özkan Canay</li>
+                    <li>Öğr.Gör.Gözde Gökpınar</li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                Adres: Camili 15 Temmuz Mahallesi Üniversite Caddesi
+                A Blok No:3 B Blok No:5 54290 Camili-Adapazarı/SAKARYA<br>
+                Telefon: 0 264 295 12 55<br>
+                Faks: 0 264 295 12 88<br>
+                Email: smyo@sakarya.edu.tr<br><br>
+                <img src="resimler/iletisim.png" class="img-fluid rounded">
+            </div>
+        </div>
+    </div>
+
+    <!-- Dersler Bölümü -->
+    <div id="ders" class="container-fluid bg-warning">
+        <div class="container">
+            <div class="row bosluk">
+                <div class="col-md-4">
+                    <h4>1.Yarıyıl</h4>
+                </div>
+                <div class="col-md-4">
+                    <h4>2.Yarıyıl</h4>
+                </div>
+                <div class="col-md-4">
+                    <h4>3.Yarıyıl</h4>
+                </div>
+            </div>
+            <div class="row bosluk">
+                <div class="col-md-4 ">
+                    <ul class="list-group">
+                        <li class="list-group-item list-group-item-warning">Web Tasarım Temelleri</li>
+                        <li class="list-group-item list-group-item-warning">Algoritma</li>
+                        <li class="list-group-item list-group-item-warning">Bilgisayar Donanımı</li>
+                        <li class="list-group-item list-group-item-warning">Grafik Tasarım</li>
+                    </ul>
+                </div>
+                <div class="col-md-4 ">
+                    <ul class="list-group">
+                        <li class="list-group-item list-group-item-warning">İnternet Programcılığı 1</li>
+                        <li class="list-group-item list-group-item-warning">Görsel Programlama 1</li>
+                        <li class="list-group-item list-group-item-warning">Bilgisayar Ağları</li>
+                        <li class="list-group-item list-group-item-warning">Veritabanı Yönetim Sistemleri</li>
+                    </ul>
+                </div>
+                <div class="col-md-4 ">
+                    <ul class="list-group">
+                        <li class="list-group-item list-group-item-warning">İnternet Programcılığı 2</li>
+                        <li class="list-group-item list-group-item-warning">Görsel Programlama 2</li>
+                        <li class="list-group-item list-group-item-warning">Bilgi ve Ağ Güvenliği</li>
+                        <li class="list-group-item list-group-item-warning">E-Ticaret</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Alt bölüm -->
+    <div id="alt" class="container-fluid bg-dark">
+        <div class="container">
+            <div class="row bosluk">
+                <div class="col-md-8 text-light">
+                    Bu site Bilgisayar Programcılığı öğrencileri tarafından
+                    tasarlanmıştır. Tüm hakları saklıdır (c) 2022
+                </div>
+                <div class="col-md-4 text-right">
+                    <img src="resimler/facebook_logos_PNG19762.png" width="40">
+                    <img src="resimler/480px-Instagram_logo_2016.svg.png" width="40">
+                    <img src="resimler/Twitter-icon.png" width="40">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<script>
+    $(function () {
+       $("#menu").fadeIn(500);
+       $("#baslik").fadeIn(1000);
+       $("#ic").fadeIn(1500);
+       $("#ders").fadeIn(2000);
+       $("#alt").fadeIn(2500);
+    });
+</script>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Süreli Yönlendirme</title>
+</head>
+<body>
+    <div id="uyari"></div>
+</body>
+</html>
+
+<script>
+    yonlendir("uyari",5,"http://www.subu.edu.tr");
+
+    function yonlendir(id,sure,adres) {
+        if (sure==0) {
+            window.location.href = adres;
+            return;
+        } else {
+            document.getElementById(id).innerText = sure + " sonra yönlendiriliyorsunuz.";
+            sure--;
+            setTimeout(function () {
+                yonlendir(id,sure,adres);
+            },1000);
+        }
+    }
+</script>

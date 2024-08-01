@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Basit Slider</title>
+    <style>
+        .slider a {
+            padding: 5px;
+            border: 1px solid #ccc;
+            text-decoration: none;
+            color: #666;
+            display: inline-block;
+        }
+
+        .slider a:hover {
+            background-color: #ccc;
+        }
+    </style>
+</head>
+<body>
+    <h3>Basit Slider</h3>
+
+    <div class="slider">
+        <img src="../resim_diger/rr1.jpg" width="50%" id="resim">
+        <div>
+            <a href="#" onmouseover="ResimDegistir(1)">1</a>
+            <a href="#" onmouseover="ResimDegistir(2)">2</a>
+            <a href="#" onmouseover="ResimDegistir(3)">3</a>
+        </div>
+    </div>
+</body>
+</html>
+
+<script>
+    function ResimDegistir(resim_no) {
+        res = document.getElementById("resim");
+        if(resim_no==1) {
+            res.src = "../resim_diger/rr1.jpg";
+        } else if(resim_no==2) {
+            res.src = "../resim_diger/rr2.jpg";
+        } else {
+            res.src = "../resim_diger/rr3.jpg";
+        }
+    }
+</script>
